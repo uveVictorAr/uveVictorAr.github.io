@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>uveVictorAr</title>
+
+  <!-- Archivo JS -->
+  <script src="script.js" type="text/javascript" defer></script>
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Archivo CSS -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Elemento principal -->
+    <main>
+
+      <div class="header"> bash - Victor Arbelaez</div>
+
+      <div class="terminal" id="terminalWindow" >
+
+        <!-- Inicio de sesión -->
+        <section id="terminal">
+          <div class="command">Successful login - <span class="error" id="date"></span></div>
+          <div class="title">Mi Portafolio</div>
+          Hola! Bienvenid@ a mi portfolio, para ver la lista de comandos escribe <span class="command">help</span>
+        </section>
+
+        <div class="prompt">
+          <span class="command">$</span> <span class="title">gestuser</span> <input id="promtInput"/>
+        </div>
+
+      </div>
+
+    </main>
+    
+    <!-- Lista de comandos -->
+    <div class="hidden" id="promptClone">
+      <span class="command">$</span> <span class="title">gestuser</span> <span class="promtCloneInput"></span>
+      <div class="promtCloneContent"></div>
+    </div>
+    <div class="hidden" id="help">
+      <div class="sectionTitle">Puedes ingresar cualquiera de estos comandos: </div>
+      <div class="indent">
+        <div>
+          <span class="command">about</span>:
+          <div class="indent">Sobre mi</div> 
+        </div>
+        <div>
+          <span class="command">social</span>:
+          <div class="indent">Listado de mis redes sociales</div> 
+        </div>
+        <div>
+          <span class="command">skills</span>:
+          <div class="indent">Las herramientas con las que trabajo</div> 
+        </div>
+        <div>
+          <span class="command">education</span>:
+          <div class="indent">Todo sobre mi formación</div> 
+        </div>
+        <div>
+          <span class="command">experience</span>:
+          <div class="indent">Donde trabajé hasta ahora</div> 
+        </div>
+        <div>
+          <span class="command">projects</span>:
+          <div class="indent">Un listado de mis proyectos</div> 
+        </div>
+        <div>
+          <span class="command">clear</span>:
+          <div class="indent">Borrar el historial de la terminal</div> 
+        </div>
+      </div>
+    </div>
+
+    <div class="hidden" id="projects">
+      <div class="sectionTitle">Proyectos: </div>
+      <div class="indent">
+        <span class="title">Proyecto 1 </span> - <a href="https://github.com/user/proyecto" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Proyecto 2 </span> - <a href="https://github.com/user/proyecto" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+      <div class="indent">
+        <span class="title">Proyecto 3 </span> - <a href="https://github.com/user/proyecto" target="_blank"><span class="command">Link a github</span> </a>
+      </div>
+    </div>
+
+    <div class="hidden" id="skills">
+      <div class="sectionTitle">Skills: </div>
+      <div class="indent">
+        <div>
+          <span class="command">Programación</span>:
+          <div class="indent">
+            <span class="title">HTML</span>
+            <span class="title">CSS</span>
+            <span class="title">TailWind</span>
+            <span class="title">BootStrap</span>
+            <span class="title">JavaScript</span>
+            <span class="title">ReactJS</span>
+            <span class="title">GIT</span>
+          </div> 
+        </div>
+
+        <div>
+          <span class="command">Diseño</span>:
+          <div class="indent">
+            <span class="title">Adobe XD</span>
+          </div> 
+        </div>
+
+        <div>
+          <span class="command">Idiomas</span>:
+          <div class="indent">
+            <span class="title">Español</span>
+            <span class="title">Inglés</span>
+            <span class="title">Portugués</span>
+          </div> 
+        </div>
+
+      </div>
+    </div>
+
+    <div class="hidden" id="about">
+      <div class="sectionTitle">Sobre mí: </div>
+        <div class="indent">
+          Hola! mi nombre es <span class="command">Victor Manuel Prieto Arbelaez</span>
+        <p class="presentacion">Soy un programador frontend aficionado por la tecnología, la música, la fotografía y los videojuegos, tengo 1 año de experiencia en desarrollo de proyectos frontend;
+           desde chico me apasionó la tecnología, en especial la programación y no fue sino hasta hace poco más de un año que decidí adentrarme dentro
+            de este maravilloso mundo del desarrollo web
+        </p>
+        </div> 
+    </div>
+
+    <!-- <div class="hidden" id="experience">
+      <div class="sectionTitle">Experiencia: </div>
+      <div class="indent">
+        <span class="title">FullStack DEV - Empresa Full</span> - <span class="command">Julio 2020 - Hoy</span>
+        <div class="indent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim qui!
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Frontend DEV - Empresa Front</span> - <span class="command">Enero 2018 - Julio 2020</span>
+        <div class="indent">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit harum beatae autem, sit dolorem vitae doloremque explicabo cupiditate, architecto iusto odio culpa facilis voluptatem saepe quis fugiat minus enim qui!
+        </div> 
+      </div>
+    </div> -->
+
+    <div class="hidden" id="social">
+      <div class="sectionTitle">Redes sociales: </div>
+      <div class="indent">
+        <span class="title">Github</span> - <span class="command">https://github.com/uveVictorAr</span>
+      </div>
+      <div class="indent">
+        <span class="title">LinkedIn</span> - <span class="command">https://linkedin.com/user</span>
+      </div>
+    </div>
+
+    <div class="education hidden" id="education">
+      <div class="sectionTitle">Formación: </div>
+      <div class="indent">
+        <span class="title">Bachiller con profundización en Pedagogía - Escuela Normal Superior</span> <span class="command">En curso (11°) 2023</span>
+        <div class="indent">
+          Estudio del bachillerato desde el grado 7° hasta el grado 11° en la Escuela Normal Superior de Leticia
+        </div> 
+      </div>
+      <div class="indent">
+        <span class="title">Técnico en Programación de Software - Servicio Nacional de Aprendizaje - SENA</span> <span class="command">En curso 2023</span>
+        <div class="indent">
+          Técnico especializado en el desarrollo web frontend y con básicos conocimientos sobre el backend
+        </div> 
+      </div>
+    </div>
+
+</body>
+</html>
